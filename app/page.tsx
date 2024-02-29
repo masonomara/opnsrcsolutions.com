@@ -18,7 +18,7 @@ export default function Home() {
       <div className={styles.content}>
         <div className={styles.titleWrapper}>
           <div className={styles.logo}>
-            <Image src={"/oss.png"} alt={"OSS"} fill />
+            <Image src={"public/oss.png"} alt={"OSS"} fill />
           </div>
           <h1 className={styles.logoTitle}>
             OpenSource
