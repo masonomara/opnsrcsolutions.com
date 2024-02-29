@@ -13,9 +13,7 @@ export default function Home() {
         controls={false}
         className={styles.video}
       />
-      <div className={styles.videoPoster}>
-        <Image src={"/opensrcVideoPoster.webp"} alt={"movie"} fill />
-      </div>
+      
 
       <div className={styles.content}>
         <div className={styles.titleWrapper}>
