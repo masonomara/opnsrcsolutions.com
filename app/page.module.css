@@ -6,18 +6,6 @@
   position: relative;
   min-height: 100svh;
 }
-.content {
-  height: 45svh;
-  padding: 24px;
-  z-index: 1;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
 .video {
   width: 100%;
   position: absolute !important;
@@ -41,6 +29,18 @@
 .video * {
   object-fit: cover !important;
 }
+.content {
+  padding: 48px 12px 0px;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 100%;
+}
 .logoTitle {
   font-weight: 600;
   font-size: 28px;
@@ -57,7 +57,119 @@
   gap: 11px;
 }
 .logo {
-  aspect-ratio: 174.48 / 77;
+  aspect-ratio: 177 / 69;
   position: relative;
   width: 174.48px;
+}
+.subtitle {
+  font-family: monospace !important;
+  text-align: center;
+  font-size: 16px;
+  line-height: 115%;
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+.infoWrapper {
+  font-size: 12px;
+  display: flex;
+  width: 100%;
+  min-width: 100%;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+.infoContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 160px;
+}
+.infoTitle {
+  font-size: 10px;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.infoLink {
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: -13.3px 0px -10.3px;
+}
+.infoSub,
+.infoMain,
+.infoLink {
+  font-family: monospace !important;
+  line-height: 17.4px !important;
+  text-shadow: 2px 6px 2px 0px rgb(7, 7, 7) !important;
+}
+.infoMain {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.infoSub {
+  letter-spacing: -0.02em;
+}
+.desktopTitle {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .content {
+    padding: 0;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+    padding: 8px 24px;
+    height: fit-content;
+  }
+  .titleWrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .logo {
+    width: auto;
+    height: 44px;
+  }
+  .logoTitle {
+    text-align: left;
+  }
+  .subtitle {
+    text-align: left;
+  }
+  .desktopTitle {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+  }
+  .logoTitle,
+  .subtitle {
+    display: none;
+  }
+  .desktopTitle * {
+    display: flex !important;
+    font-size: 12px;
+    line-height: 130% !important;
+  }
+  .desktopTitle .logoTitle {
+    font-size: 15px;
+  }
+  .infoWrapper {
+    justify-content: flex-end;
+    width: 100%
+  }
 }
