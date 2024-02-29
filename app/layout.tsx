@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Open Source Solutions",
-    template: "Open Source Solutions | %s",
+    default: "OpenSource Solutions",
+    template: "OpenSource Solutions | %s",
   },
   icons: {
     icon: "icon.ico",
