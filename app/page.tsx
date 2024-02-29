@@ -17,7 +17,7 @@ export default function Home() {
       <div className={styles.content}>
         <div className={styles.titleWrapper}>
           <div className={styles.logo}>
-            <Image src={"/oss.png"} alt={"OSS"} fill />
+            <Image src="/oss.png" alt="OSS" fill />
           </div>
           <h1 className={styles.logoTitle}>
             OpenSource
@@ -44,7 +44,7 @@ export default function Home() {
             <div className={styles.infoLink}>Email Us &gt;</div>
             <p className={styles.infoSub}>
               Portfolio available
-             
+              <br />
               by request.
             </p>
           </div>
