@@ -16,7 +16,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  opacity: 0.87
+  gap: 11px;
 }
 .video {
   width: 100%;
@@ -43,12 +43,10 @@
 }
 .logoTitle {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
-  margin-top: 9px;
-  letter-spacing: -0.02em;
-  line-height: 110%;
-  text-shadow: 0 0 0.03em #ffffff; /* Adjusted the syntax */
+  letter-spacing: -0.04em;
+  line-height: 90%;
 }
 .titleWrapper {
   display: flex;
@@ -56,9 +54,10 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
+  gap: 11px;
 }
 .logo {
-  aspect-ratio: 137.06 / 63.13;
+  aspect-ratio: 174.48 / 77;
   position: relative;
-  width: calc(100% + 30px);
+  width: 174.48px;
 }
